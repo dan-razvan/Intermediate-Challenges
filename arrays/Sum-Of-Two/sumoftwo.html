@@ -15,15 +15,13 @@ let findNumbersInArray = (array,sum)=>{
     let foundNumbers =[]
     for(let i = 0; i < numbers.length; i++){
         if(foundNumbers.length > 0){
-                break;
+            return foundNumbers
             }
         let number = numbers[i];
         for(let j = 0; j<numbers.length-1;j++){
             if(number + numbers[j] === sum){
                 foundNumbers.push(number)
                 foundNumbers.push(numbers[j])
-
-                return foundNumbers
             }
         }
     }
