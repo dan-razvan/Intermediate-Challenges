@@ -24,4 +24,5 @@ function twoNumbers(array, sumOfTwo){
 
 
 //input: twoNumbers(numbers, 20)
+
 //output: [9, 11]
