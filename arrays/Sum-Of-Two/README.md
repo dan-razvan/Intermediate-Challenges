@@ -21,3 +21,5 @@ const numbers = [2, 9, 11, 5, 8]
 function twoNumbers(array, sumOfTwo){
 
 }
+//input: twoNumbers(numbers, 20)
+//output: [9, 11]
