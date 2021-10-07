@@ -1,0 +1,34 @@
+<!-- 
+    Create a function that takes two arguments an array and a number. 
+    The purpose of this function is to look through the array and find two numbers that when added together,
+     their sum is equal to the number passed as argument. 
+    It should return an array of those two numbers. 
+    If it can't find any, it should return -1;
+
+-->
+
+<script>
+
+let numbers = [9,3,7,1,2]
+
+let findNumbersInArray = (array,sum)=>{
+    let foundNumbers =[]
+    for(let i = 0; i < numbers.length; i++){
+        if(foundNumbers.length > 0){
+                break;
+            }
+        let number = numbers[i];
+        for(let j = 0; j<numbers.length-1;j++){
+            if(number + numbers[j] === sum){
+                foundNumbers.push(number)
+                foundNumbers.push(numbers[j])
+
+                return foundNumbers
+            }
+        }
+    }
+    return -1
+    
+}
+
+</script>
